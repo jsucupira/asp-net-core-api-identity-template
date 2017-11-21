@@ -1,0 +1,321 @@
+{
+	"info": {
+		"name": "Web API Template",
+		"_postman_id": "0096132f-be5f-2f3a-88c5-9d40e0e3111e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Values Get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/values",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"values"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Values Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/values/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"values",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Values Get products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/values/1/products",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"values",
+						"1",
+						"products"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Values Get products by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/values/1/products/144",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"values",
+						"1",
+						"products",
+						"144"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Values Get with parameters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/values?searchparameter=title&searchquery=value&pagesize=5&pagenumber=1&orderby=id",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"values"
+					],
+					"query": [
+						{
+							"key": "searchparameter",
+							"value": "title",
+							"equals": true
+						},
+						{
+							"key": "searchquery",
+							"value": "value",
+							"equals": true
+						},
+						{
+							"key": "pagesize",
+							"value": "5",
+							"equals": true
+						},
+						{
+							"key": "pagenumber",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "orderby",
+							"value": "id",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"jsucupira\",\n  \"email\": \"jsucupira@gmail.com\",\n  \"password\": \"xS^1*hkjTVd8Uz**\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/accounts",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"accounts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"var accessToken = jsonData.access_token;",
+							"postman.setEnvironmentVariable(\"access_token\", accessToken);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "username=johndoe&password=xS^1*hkjTVd8Uz**&grant_type=password"
+				},
+				"url": {
+					"raw": "{{host}}/token",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"token"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Claims Get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"johndoe\",\n  \"email\": \"johndoe@gmail.com\",\n  \"password\": \"xS^1*hkjTVd8Uz**\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/accounts",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"accounts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Account LogOut",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/accounts/logout",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"accounts",
+						"logout"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

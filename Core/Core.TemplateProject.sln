@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateProject.Api", "TemplateProject\TemplateProject.Api.csproj", "{EEE97A05-6C75-4DD0-AC01-11982F675670}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateProject.Common", "TemplateProject.Common\TemplateProject.Common.csproj", "{CA2FF51F-B6C9-41E9-A2AD-B62AE4184DC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEE97A05-6C75-4DD0-AC01-11982F675670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE97A05-6C75-4DD0-AC01-11982F675670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE97A05-6C75-4DD0-AC01-11982F675670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE97A05-6C75-4DD0-AC01-11982F675670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA2FF51F-B6C9-41E9-A2AD-B62AE4184DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2FF51F-B6C9-41E9-A2AD-B62AE4184DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2FF51F-B6C9-41E9-A2AD-B62AE4184DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2FF51F-B6C9-41E9-A2AD-B62AE4184DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jsucupira.visualstudio.com/
+		SccProjectUniqueName0 = TemplateProject.Common\\TemplateProject.Common.csproj
+		SccProjectName0 = TemplateProject.Common
+		SccLocalPath0 = TemplateProject.Common
+		SccProjectUniqueName1 = TemplateProject\\TemplateProject.Api.csproj
+		SccProjectName1 = TemplateProject
+		SccLocalPath1 = TemplateProject
+		SccLocalPath2 = .
+	EndGlobalSection
+EndGlobal
