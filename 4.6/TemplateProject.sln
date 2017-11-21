@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateProject.Api", "TemplateProject.Api\TemplateProject.Api.csproj", "{2E5FDD98-ACE3-4492-B0BF-C111652ED90D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateProject.Common", "TemplateProject.Common\TemplateProject.Common.csproj", "{E57F8CED-9C42-4B7B-83AE-DDC5DD2CA704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateProject.Model", "TemplateProject.Model\TemplateProject.Model.csproj", "{A0907442-6D14-44A9-AF03-6D06F4A04137}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E5FDD98-ACE3-4492-B0BF-C111652ED90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5FDD98-ACE3-4492-B0BF-C111652ED90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5FDD98-ACE3-4492-B0BF-C111652ED90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5FDD98-ACE3-4492-B0BF-C111652ED90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57F8CED-9C42-4B7B-83AE-DDC5DD2CA704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57F8CED-9C42-4B7B-83AE-DDC5DD2CA704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57F8CED-9C42-4B7B-83AE-DDC5DD2CA704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57F8CED-9C42-4B7B-83AE-DDC5DD2CA704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0907442-6D14-44A9-AF03-6D06F4A04137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0907442-6D14-44A9-AF03-6D06F4A04137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0907442-6D14-44A9-AF03-6D06F4A04137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0907442-6D14-44A9-AF03-6D06F4A04137}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jsucupira.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TemplateProject.Api\\TemplateProject.Api.csproj
+		SccProjectName1 = TemplateProject.Api
+		SccLocalPath1 = TemplateProject.Api
+		SccProjectUniqueName2 = TemplateProject.Common\\TemplateProject.Common.csproj
+		SccProjectName2 = TemplateProject.Common
+		SccLocalPath2 = TemplateProject.Common
+		SccProjectUniqueName3 = TemplateProject.Model\\TemplateProject.Model.csproj
+		SccProjectName3 = TemplateProject.Model
+		SccLocalPath3 = TemplateProject.Model
+	EndGlobalSection
+EndGlobal
